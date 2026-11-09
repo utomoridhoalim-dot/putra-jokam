@@ -1,0 +1,37 @@
+WEBSITE PIJAT URUT PUTRA JOKAM
+
+CARA MENJALANKAN DI XAMPP (WINDOWS)
+1. Ekstrak ZIP ini. Salin folder putra-jokam ke C:\xampp\htdocs\
+   Pastikan: C:\xampp\htdocs\putra-jokam\index.html
+2. Buka XAMPP Control Panel. Klik Start pada Apache.
+   MySQL tidak perlu dijalankan karena website ini tidak memakai database.
+3. Buka browser: http://localhost/putra-jokam/
+   Jika port Apache Anda 8080, gunakan http://localhost:8080/putra-jokam/
+4. Di VS Code, pilih File > Open Folder > C:\xampp\htdocs\putra-jokam
+5. Setelah mengedit, simpan (Ctrl+S), lalu refresh browser (Ctrl+F5).
+
+TANPA XAMPP
+Buka index.html langsung di browser atau gunakan ekstensi Live Server di VS Code.
+Seluruh tampilan, poster, dan ikon tersedia lokal. Internet diperlukan untuk WhatsApp dan Maps.
+
+ISI FILE
+index.html: isi halaman dan data usaha.
+style.css: warna, ukuran, layout desktop dan HP.
+script.js: nomor WhatsApp dan pesan otomatis.
+assets/poster.png: poster usaha.
+assets/favicon.svg: ikon tab browser.
+
+MENGUBAH DATA
+- Nama, alamat, daftar layanan: edit index.html.
+- Nomor WhatsApp dan pesan: edit script.js.
+- Jika mengganti nomor, ubah juga href WhatsApp cadangan dan tel: di index.html.
+- Warna utama: edit variabel :root pada style.css.
+- Foto/poster: ganti assets/poster.png dengan gambar baru bernama sama.
+
+CATATAN
+Tombol WhatsApp hanya membuka chat dan menyiapkan pesan. Pelanggan tetap menekan Kirim sendiri.
+Tombol Google Maps memakai tautan lokasi dari pemilik usaha: https://maps.app.goo.gl/T5CVDcXXv2sMGD11A?g_st=awb
+Peta Google Maps sudah disematkan di bagian Lokasi menggunakan kode dari pemilik usaha. Peta menyesuaikan layar HP dan komputer. Internet diperlukan untuk memuatnya. Listing Maps bernama Pijat Totok saraf dan refleksi.
+Biaya, jam operasional, dan titik lokasi belum diberikan, sehingga tidak dibuat-buat.
+Website ini belum dipublikasikan ke internet. localhost hanya untuk pengembangan di komputer Anda.
+Untuk publikasi, unggah index.html, style.css, script.js, dan folder assets ke hosting statis atau hosting biasa. PHP dan database tidak diperlukan.
